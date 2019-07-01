@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let lenghta = prompt("nhập số phần tử của mảng a[]: ");
+    let a = [];
+    for (let i = 0; i < lenghta; i++) {
+        a[i] = prompt("nhập phần tử thứ " + i);
+    }
+    document.write("mảng nhập vào là: " + a.join(" , "));
+    document.write("<br>");
+    a.sort(function (a,b) {
+        return b-a;
+    })
+    document.write("mảng đã sắp xếp là: " + a.join(" , "));
+    document.write("<br>");
+</script>
+</body>
+</html>

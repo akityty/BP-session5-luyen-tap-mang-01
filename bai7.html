@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let lenghta = prompt("nhập số phần tử của mảng a[]: ");
+    let a = [];
+    for (let i = 0; i < lenghta; i++) {
+        a[i] = prompt("nhập phần tử thứ " + i);
+    }
+    alert("ĐÃ NHẬP XONG MẢNG!!!");
+    let s = prompt("nhập giá trị cần xoá: ");
+   a.splice(s);
+   a.push(0);
+   document.write(a);
+</script>
+</body>
+</html>

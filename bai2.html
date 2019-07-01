@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let a = [1,2,3,4,5,99,7,8,9,10];
+    let max= a[0];
+    let re=null;
+    for(let i = 1; i<a.length;i++){
+        if(max<a[i]) {
+            max = a[i];
+            re=i+1;
+        }
+    }
+    document.write("số ở vị trí "+re+" có giá trị lớn nhất là "+max )
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let lenghta = prompt("nhập số phần tử của mảng a[]: ");
+    let a = [];
+    for (let i = 0; i < lenghta; i++) {
+        a[i] = prompt("nhập phần tử thứ " + i);
+    }
+    alert("ĐÃ NHẬP XONG MẢNG!!!");
+    let s = prompt("nhập số cần tìm: ");
+    document.write("mảng nhập vào là: " + a.join(" , "));
+    document.write("<br>");
+    let kt = false;
+    for (let i = 0; i < a.length; i++) {
+        if (s === a[i])
+            kt = true;
+    }
+    if(kt)
+    document.write(s + " is in the array!");
+    else
+        document.write(s + " is not in the array!");
+</script>
+</body>
+</html>

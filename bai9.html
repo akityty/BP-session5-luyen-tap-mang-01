@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let lenghta = prompt("nhập số phần tử của mảng a[]: ");
+    let a = [];
+    for (let i = 0; i < lenghta; i++) {
+        a[i] = prompt("nhập phần tử thứ " + i);
+    }
+    document.write("mảng a là: " + a.join(" , "));
+    document.write("<br>");
+    let lenghtb = prompt("nhập số phần tử của mảng b[]: ");
+    let b = [];
+    for (let i = 0; i < lenghtb; i++) {
+        b[i] = prompt("nhập phần tử thứ " + i);
+    }
+    document.write("mảng b là: " + b.join(" , "));
+    document.write("<br>");
+    let c = a.concat(b);
+    document.write("mảng c là: " + c.join(" , "));
+</script>
+</body>
+</html>
